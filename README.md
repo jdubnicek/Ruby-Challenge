@@ -1,7 +1,7 @@
 Ruby-Challenge
 ==============
 
-A Four Question Ruby Code Challenge
+A Four Question Ruby Code Challenge written using Ruby version 2.1.1p76
 
 Question 1:
 FizzBuzz
