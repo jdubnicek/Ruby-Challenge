@@ -39,7 +39,7 @@ Create two models connected by a many-to-many relationship using has_many throug
 Model 1: Campus
  - city
  - state
- - name
+ - name\n
 Model 2: Student
  - first name
  - last name
