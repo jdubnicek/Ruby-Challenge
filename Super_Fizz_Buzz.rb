@@ -1,31 +1,27 @@
 class FizzApp
-	attr_accessor :input, :output, :num
+	attr_reader :num
 
 	def initialize
-		self.input  = $stdin
-		self.output = $stdout
 		@num = num
 	end
 
 	def get_target
 		puts "Please enter a target number:"
-		@num = input.gets.chomp
-		output.puts "User selected: #{num}"
+		@num = gets.chomp
+		puts "User selected: #{num}"
 	end
 
 	def fizzbuzz
-		i = 1
-		while i <= @num.to_i
-			if i % 5 == 0 && i % 3 == 0
+		1.upto(@num.to_i) do |num|
+			if num % 5 == 0 && num % 3 == 0
 				puts "FizzBuzz"
-			elsif i % 5 == 0
+			elsif num % 5 == 0
 				puts "Buzz"
-			elsif i % 3 == 0
+			elsif num % 3 == 0
 				puts "Fizz"
 			else
-				puts i
+				puts num
 			end
-			i += 1
 		end
 	end
 end

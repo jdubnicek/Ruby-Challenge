@@ -4,8 +4,8 @@ require 'open-uri'
 class StudentData
 
 	def initialze
-		@array = []
-		@sorted_array = []
+		@array = nil
+		@sorted_array = nil
 	end
 
 	def parse_data
@@ -14,7 +14,8 @@ class StudentData
 	
 	def sort_data
 		sort_order = ["Freshman", "Sophomore", "Junior", "Senior"]
-		@sorted_array = @array.each{ |k,v| k["grade"].capitalize!}.sort_by{|k,v| [sort_order.index(k["grade"])]}
+		temp_array = @array.each{ |k,v| k["grade"].capitalize!}
+		@sorted_array = temp_array.sort_by{|k,v| [sort_order.index(k["grade"])]}
 	end
 
 	def print_student_info
