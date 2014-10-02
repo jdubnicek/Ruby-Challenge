@@ -1,4 +1,4 @@
-require_relative 'Super_Fizz_Buzz.rb'
+require_relative '../lib/Super_Fizz_Buzz.rb'
 
 RSpec.describe FizzApp do
 

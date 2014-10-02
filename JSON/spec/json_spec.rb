@@ -1,6 +1,6 @@
 require 'json'
 require 'open-uri'
-require_relative 'JSON.rb'
+require_relative '../lib/JSON.rb'
 
 RSpec.describe StudentData do
 
