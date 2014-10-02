@@ -1,7 +1,8 @@
 Ruby-Challenge
 ==============
 
-A Four Question Ruby Code Challenge written using Ruby version 2.1.1p76
+A Four Question Ruby Code Challenge written using Ruby version 2.1.1p76. Some very basic RSpec tests have been added.
+I hope to add more thorough testing as time permits over the next few weeks. 
 
 Question 1:
 

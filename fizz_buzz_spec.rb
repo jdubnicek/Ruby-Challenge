@@ -1,7 +1,18 @@
-require_relative 'Super_Fizz_Buzz'
+require_relative 'Super_Fizz_Buzz.rb'
 
 RSpec.describe FizzApp do
 
+  describe '#get_target' do
+    
+    before :each do
+      @fizz_app = FizzApp.new
+    end
+
+    it "displays the user's target number" do
+      allow(@fizz_app).to receive(gets.chomp).and_return(@num = 15*rand(1..100) + 1)
+      expect(@fizz_app.get_target).to eq(puts "User selected: #{@num}")
+    end
+  end
   
   describe "#fizzbuzz" do
 
